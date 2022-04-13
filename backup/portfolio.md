@@ -70,14 +70,8 @@ and cross-functional teams.
 |High School| Kendriya Vidyalaya No.1| Bhopal, MP (India)| 2008| 83.2%|
 
 # Contact Details
-- Email - arpit04tripathi@gmail.com
-- Mobile - +91-9146714272
 - LinkedIn - [https://www.linkedin.com/in/arpit04tripathi](https://www.linkedin.com/in/arpit04tripathi)
 - GitHub - [https://github.com/arpit04tripathi](https://github.com/arpit04tripathi)
 - HackerRank - [https://www.hackerrank.com/arpit04tripathi](https://www.hackerrank.com/arpit04tripathi)
 - HackerEarth - [http://www.hackerearth.com/@arpit04tripathi](http://www.hackerearth.com/@arpit04tripathi)
 
-
----
-[![download-cv-368x72.png](./images/download-cv-368x72.png)](./docs/CV-Arpit Tripathi-4.5years.pdf)
----
