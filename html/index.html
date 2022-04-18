@@ -1,13 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML Basics</title>
-    <meta name="description" content="This showcases basic htlm tags" />
-  </head>
-  <body>
-    <h1>Heading (h1)</h1>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Basics</title>
+  <meta name="description" content="This showcases basic htlm tags" />
+</head>
+
+<body>
+  <header>
+    <h1>HTML tags</h1>
+  </header>
+  <hr />
+  <main>
+    <section>
+      <h1>Semantic HTML</h1>
+      <p>Use proper tags for proper structuring and conveying the purpose</p>
+      <ul>
+        <li>
+          head - contains metadata about the html doc
+          <ul>
+            <li>meta tag - charset UTF-8</li>
+            <li>meta tag - viewport</li>
+            <li>title tag</li>
+            <li>meta tag - description</li>
+            <li>link to import css</li>
+          </ul>
+        </li>
+        <li>
+          body
+          <ul>
+            <li>
+              header
+              <ul>
+                <li>nav</li>
+              </ul>
+            </li>
+            <li>
+              main
+              <ul>
+                <li>section</li>
+                <li>article</li>
+                <li>aside</li>
+              </ul>
+            </li>
+            <li>footer</li>
+            <li>script - to add js</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h1>Heading (h1), paragraphs and text effects</h1>
+      <p>Headings from h1 to h6</p>
+      <pre>
+This is a pre, here an-
+  -y space in html file is rendered on screen
+        </pre>
+      <p>
+        This is a paragraph, and we can embed other tags in p to alter the
+      </p>
+      <ul>
+        <li>This is <b>bold</b>.</li>
+        <li>This is <i>italic</i>.</li>
+        <li>
+          embed to make <b><i>bold italic</i></b>.
+        </li>
+        <li>This is <big>big</big>.</li>
+        <li>This is <small>small</small>.</li>
+        <li>subscript - H<sub>2</sub>O and superscript 10<sup>2</sup></li>
+        <li>others - <strike>striked</strike>, <u>underline</u></li>
+      </ul>
+    </section>
+    <section>
+      <h1>Lists</h1>
+      <h2>Unordered List</h2>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+      </ul>
+      <h2>Ordered List</h2>
+      <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+      </ol>
+      <ol type="1">
+        <li>Item 1</li>
+        <li>Item 2</li>
+      </ol>
+      <ol type="A">
+        <li>Item 1</li>
+        <li>Item 2</li>
+      </ol>
+      <ol type="a">
+        <li>Item 1</li>
+        <li>Item 2</li>
+      </ol>
+      <ol type="I">
+        <li>Item 1</li>
+        <li>Item 2</li>
+      </ol>
+      <ol type="i">
+        <li>Item 1</li>
+        <li>Item 2</li>
+      </ol>
+      <h2>Description List</h2>
+      <dl>
+        <dt>Apples</dt>
+        <dd>They are red, pink, green etc.</dd>
+        <dt>Oranges</dt>
+        <dd>They are orange.</dd>
+      </dl>
+    </section>
+    <section>
+      <h1>Images and Videos</h1>
+      <p>
+      <h2>Image</h2>
+      <img src="https://images.freeimages.com/images/large-previews/1d2/music-nightclub-1420666.jpg" alt="random"
+        width="25%" />
+      <h2>Local Video on server</h2>
+      <video src="https://www.youtube.com/watch?v=pQN-pnXPaVg"
+        poster="https://www.simplilearn.com/ice9/free_resources_article_thumb/html_video_tag.jpg" width="50%" controls
+        autoplay>
+        HTML tutorial
+      </video>
+      </p>
+      <h2>Embed Youtube Video</h2>
+      <p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pQN-pnXPaVg" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </p>
+    </section>
+    <section>
+      <h1>Tables</h1>
+      <table>
+        <thead>
+          <caption>
+            <h3>Table Heading</h3>
+          </caption>
+          <tr>
+            <th>Col 1</th>
+            <th>Col 2</th>
+            <th>Col 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Data 1 C1</td>
+            <td>Data 1 C2</td>
+            <td>Data 1 C3</td>
+          </tr>
+          <tr>
+            <td>Data 2 C1</td>
+            <td>Data 2 C2</td>
+            <td>Data 2 C3</td>
+          </tr>
+          <tr>
+            <td colspan="2">Data 3 colspan 2</td>
+            <td>Data 3 C3</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <h1>Div and Spans</h1>
+      <p>Two main ways to display - block and inline</p>
+      <p><a href="#">Link 1</a> <a href="#">Link 1</a></p>
+      <p>paragraph 1</p>
+      <p>paragraph 2</p>
+      <ul>
+        <li>span are inline container</li>
+        <li>div are block container - block element</li>
+      </ul>
+    </section>
+    <section>
+      <h1>Form and Inputs</h1>
+      <form action="url_to_post" method="post">
+        <h1>Input Form</h1>
+        <p>
+          <label for="username">Input Text</label> <input type="text" name="username"
+            placeholder="username placeholder" />
+        </p>
+        <p>
+          <label for="password">Password Text</label> <input type="password" name="password" id="pass"
+            placeholder="enter password">
+        </p>
+        <p>
+          <label for="notes">Text Area</label> <textarea name="notes" id="" cols="30" rows="5"
+            placeholder="Enter a note"></textarea>
+        </p>
+        <p> <label for="date">Date</label> <input type="date" name="date" id=""> </p>
+        <p><label for="time">Time</label> <input type="time" name="time" id=""></p>
+        <p>
+          <label for="datetime-local">Datetime Local</label> <input type="datetime-local" name="datetime-local" id="">
+        </p>
+        <p><label for="datetime">Datetime</label> <input type="datetime" name="datetime" id="">
+          <strike>deprecated</strike>
+        </p>
+        <p><label for="month">Month</label> <input type="month" name="month" id=""></p>
+        <p><label for="week">Week</label> <input type="week" name="week" id=""></p>
+        <p><label for="url">URL</label> <input type="url" name="url" id=""></p>
+        <p><label for="phone">Phone</label> <input type="tel" name="phone" id=""></p>
+        <p><label for="color">Color</label> <input type="color" name="color" id=""></p>
+        <p><label for="email">Email</label> <input type="email" name="email" id=""></p>
+        <p><label for="range">Range</label> <input type="range" name="range" id="" min="1" max="50"></p>
+        <p><label for="file">File</label> <input type="file" name="file" id=""></p>
+        <p>
+          <label for="qty">Quantity</label>
+          <input type="checkbox" name="qty" id="" value="1"> 1
+          <input type="checkbox" name="qty" id="" value="2"> 2
+        </p>
+        <p>
+          <label for="radio">Options</label>
+          <input type="radio" name="radio" id="" value="1"> 1
+          <input type="radio" name="radio" id="" value="2"> 2
+          <input type="radio" name="radio" id="" value="all"> All
+        </p>
+        <p><label for="search">Search Text</label> <input type="search" name="search" id=""></p>
+        <p><label for="hidden">Hidden input</label> <input type="hidden" name="hidden-value"
+            value="hidden-element-value"></p>
+        <p><label for="submit">Submit Btn</label> <input type="submit" value="Submit Here"></p>
+        <p><label for="reset">Reset</label> <input type="reset" value="Reset"></p>
+        <p><label for="image">Image</label> <input type="image" src="image" alt="graphical submit buttons"></p>
+      </form>
+    </section>
+  </main>
+  <hr />
+  <footer>
+    <h1>Footer</h1>
+    <p>This is <b>footer</b></p>
+    <p>Do follow semantics for html rather than using div everywhere</p>
+  </footer>
+</body>
+
 </html>
