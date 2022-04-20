@@ -13,51 +13,15 @@
 
 <body>
   <header>
+    <hr>
+    <hr>
     <h1>HTML tags</h1>
+    <hr />
+    <hr />
   </header>
-  <hr />
   <main>
     <section>
-      <h1>Semantic HTML</h1>
-      <p>Use proper tags for proper structuring and conveying the purpose</p>
-      <ul>
-        <li>
-          head - contains metadata about the html doc
-          <ul>
-            <li>meta tag - charset UTF-8</li>
-            <li>meta tag - viewport</li>
-            <li>title tag</li>
-            <li>meta tag - description</li>
-            <li>meta tag - author</li>
-            <li>meta tag - keywords</li>
-            <li>link to import css</li>
-          </ul>
-        </li>
-        <li>
-          body
-          <ul>
-            <li>
-              header
-              <ul>
-                <li>nav</li>
-              </ul>
-            </li>
-            <li>
-              main
-              <ul>
-                <li>section</li>
-                <li>article</li>
-                <li>aside</li>
-              </ul>
-            </li>
-            <li>footer</li>
-            <li>script - to add js</li>
-          </ul>
-        </li>
-      </ul>
-    </section>
-    <section>
-      <h1>Heading (h1), paragraphs and text effects</h1>
+      <h1>Basic Text</h1>
       <p>Headings from h1 to h6</p>
       <pre>
 This is a pre, here an-
@@ -74,10 +38,14 @@ This is a pre, here an-
         </li>
         <li>This is <big>big</big>.</li>
         <li>This is <small>small</small>.</li>
-        <li>subscript - H<sub>2</sub>O and superscript 10<sup>2</sup></li>
-        <li>others - <strike>striked</strike>, <u>underline</u></li>
+        <li>subscript - H<sub>2</sub>O</li>
+        <li>superscript - 10<sup>2</sup></li>
+        <li><strike>striked</strike></li>
+        <li><u>underline</u></li>
+        <li>highlight - <mark>mark</mark></li>
       </ul>
     </section>
+    <hr>
     <section>
       <h1>Lists</h1>
       <h2>Unordered List</h2>
@@ -86,10 +54,12 @@ This is a pre, here an-
         <li>Item 2</li>
       </ul>
       <h2>Ordered List</h2>
+      <h3>Default</h3>
       <ol>
         <li>Item 1</li>
         <li>Item 2</li>
       </ol>
+      <h3>With type</h3>
       <ol type="1">
         <li>Item 1</li>
         <li>Item 2</li>
@@ -118,6 +88,15 @@ This is a pre, here an-
         <dd>They are orange.</dd>
       </dl>
     </section>
+    <hr>
+    <section>
+      <h1>Details and Summary</h1>
+      <details>
+        <summary>Heading Title</summary>
+        <p>Full long Description here</p>
+      </details>
+    </section>
+    <hr>
     <section>
       <h1>Images and Videos</h1>
       <p>
@@ -134,14 +113,8 @@ This is a pre, here an-
         HTML tutorial
       </video>
       </p>
-      <h2>Embed Youtube Video</h2>
-      <p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/pQN-pnXPaVg" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-      </p>
     </section>
+    <hr>
     <section>
       <h1>Tables</h1>
       <table>
@@ -173,6 +146,7 @@ This is a pre, here an-
         </tbody>
       </table>
     </section>
+    <hr>
     <section>
       <h1>Div and Spans</h1>
       <p>Two main ways to display - block and inline</p>
@@ -184,62 +158,117 @@ This is a pre, here an-
         <li>div are block container - block element</li>
       </ul>
     </section>
+    <hr>
     <section>
       <h1>Form and Inputs</h1>
-      <form action="url_to_post" method="post">
-        <h1>Input Form</h1>
-        <p>
-          <label for="username">Input Text</label> <input type="text" name="username"
-            placeholder="username placeholder" />
-        </p>
-        <p>
-          <label for="password">Password Text</label> <input type="password" name="password" id="pass"
-            placeholder="enter password">
-        </p>
-        <p>
-          <label for="notes">Text Area</label> <textarea name="notes" id="" cols="30" rows="5"
-            placeholder="Enter a note"></textarea>
-        </p>
-        <p> <label for="date">Date</label> <input type="date" name="date" id=""> </p>
-        <p><label for="time">Time</label> <input type="time" name="time" id=""></p>
-        <p>
-          <label for="datetime-local">Datetime Local</label> <input type="datetime-local" name="datetime-local" id="">
-        </p>
-        <p><label for="datetime">Datetime</label> <input type="datetime" name="datetime" id="">
-          <strike>deprecated</strike>
-        </p>
-        <p><label for="month">Month</label> <input type="month" name="month" id=""></p>
-        <p><label for="week">Week</label> <input type="week" name="week" id=""></p>
+      <form action="/process" method="post">
+        <h1>Form Heading</h1>
+        <section>
+          <h2>Text Fields</h2>
+          <p>
+            <label for="username">Input Text</label> <input type="text" name="username"
+              placeholder="username placeholder" />
+          </p>
+          <p>
+            <label for="password">Password Text</label> <input type="password" name="password" id="pass"
+              placeholder="enter password">
+          </p>
+          <p>
+            <label for="notes">Text Area</label> <textarea name="notes" id="" cols="30" rows="5"
+              placeholder="Enter a note"></textarea>
+          </p>
+        </section>
+        <section>
+          <h2>Date Fields</h2>
+          <p> <label for="date">Date</label> <input type="date" name="date" id=""> </p>
+          <p><label for="time">Time</label> <input type="time" name="time" id=""></p>
+          <p>
+            <label for="datetime-local">Datetime Local</label> <input type="datetime-local" name="datetime-local" id="">
+          </p>
+          <p><label for="datetime">Datetime</label> <input type="datetime" name="datetime" id="">
+            <strike>deprecated</strike>
+          </p>
+          <p><label for="month">Month</label> <input type="month" name="month" id=""></p>
+          <p><label for="week">Week</label> <input type="week" name="week" id=""></p>
+        </section>
+        <section>
+          <h2>Specific Type (validated)</h2>
+        </section>
         <p><label for="url">URL</label> <input type="url" name="url" id=""></p>
-        <p><label for="phone">Phone</label> <input type="tel" name="phone" id=""></p>
-        <p><label for="color">Color</label> <input type="color" name="color" id=""></p>
         <p><label for="email">Email</label> <input type="email" name="email" id=""></p>
+        <p><label for="phone">Phone (maxlength 5)</label> <input type="tel" name="phone" id="" maxlength="5"></p>
         <p><label for="range">Range</label> <input type="range" name="range" id="" min="1" max="50"></p>
-        <p><label for="file">File</label> <input type="file" name="file" id=""></p>
-        <p>
-          <label for="qty">Quantity</label>
-          <input type="checkbox" name="qty" id="" value="1"> 1
-          <input type="checkbox" name="qty" id="" value="2"> 2
-        </p>
-        <p>
-          <label for="radio">Options</label>
-          <input type="radio" name="radio" id="" value="1"> 1
-          <input type="radio" name="radio" id="" value="2"> 2
-          <input type="radio" name="radio" id="" value="all"> All
-        </p>
-        <p><label for="search">Search Text</label> <input type="search" name="search" id=""></p>
-        <p><label for="hidden">Hidden input</label> <input type="hidden" name="hidden-value"
-            value="hidden-element-value"></p>
-        <p><label for="submit">Submit Btn</label> <input type="submit" value="Submit Here"></p>
-        <p><label for="reset">Reset</label> <input type="reset" value="Reset"></p>
-        <p><label for="image">Image</label> <input type="image" src="image" alt="graphical submit buttons"></p>
+        <section>
+          <h2>Checkbox, Radio and Dropdown</h2>
+          <p>
+            <label for="qty">Quantity</label>
+            <input type="checkbox" name="qty" id="" value="1"> 1
+            <input type="checkbox" name="qty" id="" value="2"> 2
+          </p>
+          <p>
+            <label for="radio">Options</label>
+            <input type="radio" name="radio" id="" value="1"> 1
+            <input type="radio" name="radio" id="" value="2"> 2
+            <input type="radio" name="radio" id="" value="all"> All
+          </p>
+          <p>
+            <label for="cars-choice">datalist - Car:</label>
+            <input list="cars-suggestions" size="50px" placeholder="search..." name="cars-choice" />
+            <datalist id="cars-suggestions">
+              <option value="mercedes">describe my car - mercedes</option>
+              <option>volkswagen</option>
+              <option>BMW</option>
+              <option>Tesla</option>
+              <option>Lamborghini</option>
+            </datalist>
+          </p>
+          <p>
+            <label for="car">Select a Car:</label>
+            <select id="suggestions" name="car">
+              <optgroup label="Group 1">
+                <option value="mer">mercedes</option>
+                <option>volkswagen</option>
+              </optgroup>
+              <optgroup label="Group 2">
+                <option>BMW</option>
+                <option>Tesla</option>
+                <option>Lamborghini</option>
+              </optgroup>
+              <option>Others</option>
+            </select>
+          </p>
+        </section>
+        <section>
+          <h2>others</h2>
+          <p><label for="color">Color</label> <input type="color" name="color" id=""></p>
+          <p><label for="file">File</label> <input type="file" name="file" id=""></p>
+          <p><label for="search">Search Text</label> <input type="search" name="search" id=""></p>
+          <p><label for="hidden">Hidden input</label> <input type="hidden" name="hidden-value"
+              value="hidden-element-value"></p>
+        </section>
+        <section>
+          <h2>Tags for Display</h2>
+          <p>Meter : <meter min="0" max="100" value="50">Meter</meter></p>
+          <p>Progress : <progress max="100" , value="10">Progress</progress></p>
+        </section>
+        <section>
+          <h2>Submit Section</h2>
+          <p><label for="submit">Submit Btn</label> <input type="submit" value="Submit Here"></p>
+          <p><label for="reset">Reset</label> <input type="reset" value="Reset"></p>
+          <p><label for="image">Image</label> <input type="image" src="image" alt="graphical submit buttons"></p>
+        </section>
       </form>
     </section>
+    <hr>
     <section>
       <h1>IFrame</h1>
       <p>iframe embeds another website in your page</p>
       <iframe src="http://www.arpit04tripathi.com" frameborder="0" width="75%" height="75%">Needs to support iframe to
         view this embedded site</iframe>
+      <p>Embed Youtube Video</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/pQN-pnXPaVg" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
     </section>
   </main>
   <hr />
