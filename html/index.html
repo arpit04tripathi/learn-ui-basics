@@ -166,54 +166,66 @@ This is a pre, here an-
         <section>
           <h2>Text Fields</h2>
           <p>
-            <label for="username">Input Text</label> <input type="text" name="username"
+            <!-- label always have for="element_id" -->
+            <!-- WHY? -->
+            <!-- label is clickable and links to element with ID, so if I click label then it will select radio button with id in for attribute -->
+            <label for="id_username">Input Text</label> <input type="text" id="id_username" name="username"
               placeholder="username placeholder" />
           </p>
           <p>
-            <label for="password">Password Text</label> <input type="password" name="password" id="pass"
+            <label for="id_password">Password Text</label> <input type="password" name="password" id="id_password"
               placeholder="enter password">
           </p>
           <p>
-            <label for="notes">Text Area</label> <textarea name="notes" id="" cols="30" rows="5"
+            <label for="id_notes">Text Area</label> <textarea name="notes" id="id_notes" cols="30" rows="5"
               placeholder="Enter a note"></textarea>
           </p>
         </section>
         <section>
           <h2>Date Fields</h2>
-          <p> <label for="date">Date</label> <input type="date" name="date" id=""> </p>
-          <p><label for="time">Time</label> <input type="time" name="time" id=""></p>
+          <p> <label for="id_date">Date</label> <input type="date" name="date" id="id_date"> </p>
+          <p><label for="id_time">Time</label> <input type="time" name="time" id="id_time"></p>
           <p>
-            <label for="datetime-local">Datetime Local</label> <input type="datetime-local" name="datetime-local" id="">
+            <label for="id_datetime_local">Datetime Local</label> <input type="datetime-local" name="datetime-local"
+              id="id_datetime_local">
           </p>
-          <p><label for="datetime">Datetime</label> <input type="datetime" name="datetime" id="">
+          <p><label for="id_datetime">Datetime</label> <input type="datetime" name="datetime" id="id_datetime">
             <strike>deprecated</strike>
           </p>
-          <p><label for="month">Month</label> <input type="month" name="month" id=""></p>
-          <p><label for="week">Week</label> <input type="week" name="week" id=""></p>
+          <p><label for="id_month">Month</label> <input type="month" name="month" id="id_month"></p>
+          <p><label for="id_week">Week</label> <input type="week" name="week" id="id_week"></p>
         </section>
         <section>
           <h2>Specific Type (validated)</h2>
         </section>
-        <p><label for="url">URL</label> <input type="url" name="url" id=""></p>
-        <p><label for="email">Email</label> <input type="email" name="email" id=""></p>
-        <p><label for="phone">Phone (maxlength 5)</label> <input type="tel" name="phone" id="" maxlength="5"></p>
-        <p><label for="range">Range</label> <input type="range" name="range" id="" min="1" max="50"></p>
+        <p><label for="id_url">URL</label> <input type="url" name="url" id="id_url"></p>
+        <p><label for="id_email">Email</label> <input type="email" name="email" id="id_email"></p>
+        <p><label for="id_phone">Phone (maxlength 5)</label> <input type="tel" name="phone" id="id_phone" maxlength="5"
+            required></p>
+        <p><label for="id_range">Range</label> <input type="range" name="range" id="id_range" min="1" max="50"></p>
         <section>
           <h2>Checkbox, Radio and Dropdown</h2>
           <p>
-            <label for="qty">Quantity</label>
-            <input type="checkbox" name="qty" id="" value="1"> 1
-            <input type="checkbox" name="qty" id="" value="2"> 2
+          <fieldset>
+            <legend>Quantity (fieldset legend) - can be diabled to disable all options</legend>
+            <label>Quantity</label>
+            <input type="checkbox" name="qty" id="id_qty_1" value="1" checked> <label for="id_qty_1">1 KG</label>
+            <input type="checkbox" name="qty" id="id_qty_2" value="2"> <label for="id_qty_2">2 KG</label>
+            <input type="checkbox" name="qty" id="id_qty_5" value="5"> <label for="id_qty_5">5 KG</label>
+          </fieldset>
           </p>
           <p>
-            <label for="radio">Options</label>
-            <input type="radio" name="radio" id="" value="1"> 1
-            <input type="radio" name="radio" id="" value="2"> 2
-            <input type="radio" name="radio" id="" value="all"> All
+          <fieldset>
+            <legend>Options</legend>
+            <label>Radio Buttons</label>
+            <input type="radio" name="radio" id="id_opt_1" value="1" checked> <label for="id_opt_1">opt 1</label>
+            <input type="radio" name="radio" id="id_opt_2" value="2"> <label for="id_opt_2">opt 2</label>
+            <input type="radio" name="radio" id="id_opt_all" value="all"> <label for="id_opt_all">opt ALL</label>
+          </fieldset>
           </p>
           <p>
-            <label for="cars-choice">datalist - Car:</label>
-            <input list="cars-suggestions" size="50px" placeholder="search..." name="cars-choice" />
+            <label for="id_cars_dl">datalist - Car:</label>
+            <input list="cars-suggestions" size="50px" placeholder="search..." name="cars-choice" id="id_cars_dl" />
             <datalist id="cars-suggestions">
               <option value="mercedes">describe my car - mercedes</option>
               <option>volkswagen</option>
@@ -223,8 +235,8 @@ This is a pre, here an-
             </datalist>
           </p>
           <p>
-            <label for="car">Select a Car:</label>
-            <select id="suggestions" name="car">
+            <label for="id_cars_opt_group">Select - Car:</label>
+            <select id="id_cars_opt_group" name="car">
               <optgroup label="Group 1">
                 <option value="mer">mercedes</option>
                 <option>volkswagen</option>
@@ -240,10 +252,10 @@ This is a pre, here an-
         </section>
         <section>
           <h2>others</h2>
-          <p><label for="color">Color</label> <input type="color" name="color" id=""></p>
-          <p><label for="file">File</label> <input type="file" name="file" id=""></p>
-          <p><label for="search">Search Text</label> <input type="search" name="search" id=""></p>
-          <p><label for="hidden">Hidden input</label> <input type="hidden" name="hidden-value"
+          <p><label for="id_color">Color</label> <input type="color" name="color" id="id_color"></p>
+          <p><label for="id_file">File</label> <input type="file" name="file" id="id_file"></p>
+          <p><label for="id_search">Search Text</label> <input type="search" name="search" id="id_search"></p>
+          <p><label for="id_hidden">Hidden input</label> <input type="hidden" name="hidden-value" id="id_hidden"
               value="hidden-element-value"></p>
         </section>
         <section>
@@ -253,9 +265,9 @@ This is a pre, here an-
         </section>
         <section>
           <h2>Submit Section</h2>
-          <p><label for="submit">Submit Btn</label> <input type="submit" value="Submit Here"></p>
-          <p><label for="reset">Reset</label> <input type="reset" value="Reset"></p>
-          <p><label for="image">Image</label> <input type="image" src="image" alt="graphical submit buttons"></p>
+          <p><label for="id_submit">Submit Btn</label> <input type="submit" value="Submit Here" id="id_submit"></p>
+          <p><label for="id_reset">Reset</label> <input type="reset" value="Reset" id="id_reset"></p>
+          <p><label for="id_image">Image</label> <input type="image" src="image" alt="graphical submit buttons" id="id_image"></p>
         </section>
       </form>
     </section>
