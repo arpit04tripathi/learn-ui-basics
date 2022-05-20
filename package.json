@@ -1,0 +1,26 @@
+{
+  "name": "ui-basics",
+  "version": "1.0.0",
+  "description": "Learning and Practicing UI Basics\r - html\r - css \r - bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass assets/scss:assets/css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arpit04tripathi/ui-basics.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arpit04tripathi/ui-basics/issues"
+  },
+  "homepage": "https://github.com/arpit04tripathi/ui-basics#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "bootstrap-icons": "^1.8.2"
+  },
+  "devDependencies": {
+    "sass": "^1.52.0"
+  }
+}
