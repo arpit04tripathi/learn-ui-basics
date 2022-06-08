@@ -11146,4 +11146,13 @@ body {
   width: 100%;
 }
 
+@media (max-width: 7668px) {
+  #showcase {
+    min-height: 500px;
+  }
+  #showcase h1, #showcase .h1 {
+    font-size: 4rem;
+  }
+}
+
 /*# sourceMappingURL=mizuxe.css.map */
