@@ -13,116 +13,133 @@
 </head>
 
 <body>
-  <div class="container">
-  <header>
-    <hr>
-    <hr>
-    <h1>HTML tags</h1>
-    <hr />
-    <hr />
+  <header class="bg-light py-3 mb-2">
+    <div class="container">
+      <h1>HTML tags</h1>
+    </div>
   </header>
-  <main>
-    <section>
-      <h1>Basic Text</h1>
+  <main class="container">
+    <section class="border p-3">
+      <h2>Basic Text</h2>
+      <hr>
       <p>Headings from h1 to h6</p>
-      <pre>
-This is a pre, here an-
+      <pre>This is a pre, here an-
   -y space in html file is rendered on screen
-        </pre>
+      </pre>
       <p>
-        This is a paragraph, and we can embed other tags in p to alter the
+        This is a paragraph, and we can embed other tags in p to alter the text formatting.
       </p>
       <ul>
-        <li>This is <b>bold</b>.</li>
-        <li>This is <i>italic</i>.</li>
-        <li>
-          embed to make <b><i>bold italic</i></b>.
-        </li>
-        <li>This is <big>big</big>.</li>
-        <li>This is <small>small</small>.</li>
-        <li>subscript - H<sub>2</sub>O</li>
-        <li>superscript - 10<sup>2</sup></li>
-        <li><strike>striked</strike></li>
-        <li><u>underline</u></li>
-        <li>highlight - <mark>mark</mark></li>
+        <li><b>bold</b> or <i>italic</i> or <b><i>bold + italic</i></b>.</li>
+        <li><big>big</big> or <small>small</small>.</li>
+        <li>subscript - H<sub>2</sub>O or superscript - 10<sup>2</sup></li>
+        <li><strike>striked</strike> or <u>underline</u> or <mark>highlight (mark)</mark></li>
       </ul>
     </section>
-    <hr>
-    <section>
-      <h1>Lists</h1>
-      <h2>Unordered List</h2>
+    <br>
+    <section class="border p-3">
+      <h2>Lists</h2>
+      <hr>
+      <h3>Unordered List</h3>
       <ul>
         <li>Item 1</li>
         <li>Item 2</li>
       </ul>
-      <h2>Ordered List</h2>
-      <h3>Default</h3>
+
+      <h3>Ordered List</h3>
+      <b>Default</b>
       <ol>
         <li>Item 1</li>
         <li>Item 2</li>
       </ol>
-      <h3>With type</h3>
-      <ol type="1">
-        <li>Item 1</li>
-        <li>Item 2</li>
-      </ol>
-      <ol type="A">
-        <li>Item 1</li>
-        <li>Item 2</li>
-      </ol>
-      <ol type="a">
-        <li>Item 1</li>
-        <li>Item 2</li>
-      </ol>
-      <ol type="I">
-        <li>Item 1</li>
-        <li>Item 2</li>
-      </ol>
-      <ol type="i">
-        <li>Item 1</li>
-        <li>Item 2</li>
-      </ol>
-      <h2>Description List</h2>
+      <b>With type</b>
+      <div class="row">
+        <div class="col">
+          <p>type="1"</p>
+          <ol type="1">
+            <li>Item 1</li>
+            <li>Item 2</li>
+          </ol>
+        </div>
+        <div class="col">
+          <p>type="A"</p>
+          <ol type="A">
+            <li>Item 1</li>
+            <li>Item 2</li>
+          </ol>
+        </div>
+        <div class="col">
+          <p>type="a"</p>
+          <ol type="a">
+            <li>Item 1</li>
+            <li>Item 2</li>
+          </ol>
+        </div>
+        <div class="col">
+          <p>type="I"</p>
+          <ol type="I">
+            <li>Item 1</li>
+            <li>Item 2</li>
+          </ol>
+        </div>
+        <div class="col">
+          <p>type="i"</p>
+          <ol type="i">
+            <li>Item 1</li>
+            <li>Item 2</li>
+          </ol>
+        </div>
+      </div>
+
+      <h3>Description List</h3>
       <dl>
         <dt>Apples</dt>
         <dd>They are red, pink, green etc.</dd>
+
         <dt>Oranges</dt>
         <dd>They are orange.</dd>
       </dl>
     </section>
-    <hr>
-    <section>
-      <h1>Details and Summary</h1>
+    <br>
+    <section class="border p-3">
+      <h2>Details and Summary</h2>
+      <hr>
       <details>
         <summary>Heading Title</summary>
         <p>Full long Description here</p>
       </details>
     </section>
-    <hr>
-    <section>
-      <h1>Images and Videos</h1>
-      <p>
-      <h2>Image - Figure and Figure Caption</h2>
-      <figure>
-        <img src="https://images.freeimages.com/images/large-previews/1d2/music-nightclub-1420666.jpg"
-          alt="random image" width="25%" />
-        <figcaption>Fig1. - Trulli, Puglia, Italy.</figcaption>
-      </figure>
-      <h2>Local Video on server</h2>
-      <video src="https://www.youtube.com/watch?v=pQN-pnXPaVg"
-        poster="https://www.simplilearn.com/ice9/free_resources_article_thumb/html_video_tag.jpg" width="50%" controls
-        autoplay>
-        HTML tutorial
-      </video>
-      </p>
+    <br>
+    <section class="border p-3">
+      <h2>Images and Videos</h2>
+      <hr>
+      <div class="row">
+        <div class="col">
+          <h3>Image - Figure and Figure Caption</h3>
+          <figure>
+            <img src="https://images.freeimages.com/images/large-previews/1d2/music-nightclub-1420666.jpg"
+              alt="random image" width="25%" />
+            <figcaption>Fig1. - Trulli, Puglia, Italy.</figcaption>
+          </figure>
+        </div>
+        <div class="col">
+          <h3>Local Video on server</h3>
+          <video src="https://www.youtube.com/watch?v=pQN-pnXPaVg"
+            poster="https://www.simplilearn.com/ice9/free_resources_article_thumb/html_video_tag.jpg" width="50%"
+            controls autoplay>
+            HTML tutorial
+          </video>
+        </div>
+      </div>
     </section>
-    <hr>
-    <section>
-      <h1>Tables</h1>
-      <table>
+    <br>
+    <section class="border p-3">
+      <h2>Tables</h2>
+      <hr>
+      <table class="table table-striped table-bordered table-hover caption-top">
         <thead>
           <caption>
-            <h3>Table Heading</h3>
+            <b>Table Heading</b>
           </caption>
           <tr>
             <th>Col 1</th>
@@ -142,15 +159,16 @@ This is a pre, here an-
             <td>Data 2 C3</td>
           </tr>
           <tr>
-            <td colspan="2">Data 3 colspan 2</td>
+            <td colspan="2" class="table-info">Data 3 colspan 2</td>
             <td>Data 3 C3</td>
           </tr>
         </tbody>
       </table>
     </section>
-    <hr>
-    <section>
-      <h1>Div and Spans</h1>
+    <br>
+    <section class="border p-3">
+      <h2>Div and Spans</h2>
+      <hr>
       <p>Two main ways to display - block and inline</p>
       <p><a href="#">Link 1</a> <a href="#">Link 1</a></p>
       <p>paragraph 1</p>
@@ -160,74 +178,125 @@ This is a pre, here an-
         <li>div are block container - block element</li>
       </ul>
     </section>
-    <hr>
-    <section>
-      <h1>Form and Inputs</h1>
+    <br>
+    <section class="border p-3">
+      <h2>Form and Inputs</h2>
+      <hr>
+      <p>
+        label always have for="element_id", WHY?
+      <ul>
+        <li>label is clickable and links to element with ID, so if I click label then it will select radio button with
+          id in for attribute</li>
+      </ul>
+      </p>
       <form action="/process" method="post">
-        <h1>Form Heading</h1>
-        <section>
-          <h2>Text Fields</h2>
-          <p>
-            <!-- label always have for="element_id" -->
-            <!-- WHY? -->
-            <!-- label is clickable and links to element with ID, so if I click label then it will select radio button with id in for attribute -->
-            <label for="id_username">Input Text</label> <input type="text" id="id_username" name="username"
+        <h3>Form Heading</h3>
+        <section class="border m-3 p-3 row">
+          <h4>Text Fields</h4>
+          <div class="col-md-4">
+            <label class="form-label" for="id_username">Input Text</label>
+            <input class="form-control" type="text" id="id_username" name="username"
               placeholder="username placeholder" />
-          </p>
-          <p>
-            <label for="id_password">Password Text</label> <input type="password" name="password" id="id_password"
-              placeholder="enter password">
-          </p>
-          <p>
-            <label for="id_notes">Text Area</label> <textarea name="notes" id="id_notes" cols="30" rows="5"
+          </div>
+          <div class="col-md-4">
+            <label class="form-label" for="id_password">Password Text</label>
+            <input class="form-control" type="password" name="password" id="id_password" placeholder="enter password">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label" for="id_notes">Text Area</label>
+            <textarea class="form-control" name="notes" id="id_notes" cols="30" rows="5"
               placeholder="Enter a note"></textarea>
-          </p>
+          </div>
         </section>
-        <section>
-          <h2>Date Fields</h2>
-          <p> <label for="id_date">Date</label> <input type="date" name="date" id="id_date"> </p>
-          <p><label for="id_time">Time</label> <input type="time" name="time" id="id_time"></p>
-          <p>
-            <label for="id_datetime_local">Datetime Local</label> <input type="datetime-local" name="datetime-local"
-              id="id_datetime_local">
-          </p>
-          <p><label for="id_datetime">Datetime</label> <input type="datetime" name="datetime" id="id_datetime">
-            <strike>deprecated</strike>
-          </p>
-          <p><label for="id_month">Month</label> <input type="month" name="month" id="id_month"></p>
-          <p><label for="id_week">Week</label> <input type="week" name="week" id="id_week"></p>
+        <section class="border m-3 p-3 row">
+          <h4>Date Fields</h4>
+          <div class="col-md-4">
+            <label class="form-label" for="id_date">Date</label>
+            <input class="form-control" type="date" name="date" id="id_date">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label" for="id_datetime">Datetime (<strike>deprecated</strike>)</label>
+            <input class="form-control" type="datetime" name="datetime" id="id_datetime">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label" for="id_week">Week</label>
+            <input class="form-control" type="week" name="week" id="id_week">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label" for="id_time">Time</label>
+            <input class="form-control" type="time" name="time" id="id_time">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label" for="id_datetime_local">Datetime Local</label>
+            <input class="form-control" type="datetime-local" name="datetime-local" id="id_datetime_local">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label" for="id_month">Month</label>
+            <input class="form-control" type="month" name="month" id="id_month">
+          </div>
         </section>
-        <section>
-          <h2>Specific Type (validated)</h2>
+        <section class="border m-3 p-3 row">
+          <h4>Specific Type (validated)</h4>
+          <div class="col-md-3">
+            <label class="form-label" for="id_url">URL</label>
+            <input class="form-control" type="url" name="url" id="id_url">
+          </div>
+          <div class="col-md-3">
+            <label class="form-label" for="id_email">Email</label>
+            <input class="form-control" type="email" name="email" id="id_email">
+          </div>
+          <div class="col-md-3">
+            <label class="form-label" for="id_phone">Phone (maxlength 5)</label>
+            <input class="form-control" type="tel" name="phone" id="id_phone" maxlength="5" required>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label" for="id_range">Range</label>
+            <input class="form-range" type="range" name="range" id="id_range" min="1" max="50" step="1">
+          </div>
         </section>
-        <p><label for="id_url">URL</label> <input type="url" name="url" id="id_url"></p>
-        <p><label for="id_email">Email</label> <input type="email" name="email" id="id_email"></p>
-        <p><label for="id_phone">Phone (maxlength 5)</label> <input type="tel" name="phone" id="id_phone" maxlength="5"
-            required></p>
-        <p><label for="id_range">Range</label> <input type="range" name="range" id="id_range" min="1" max="50"></p>
-        <section>
-          <h2>Checkbox, Radio and Dropdown</h2>
-          <p>
-          <fieldset>
-            <legend>Quantity (fieldset legend) - can be diabled to disable all options</legend>
-            <label>Quantity</label>
-            <input type="checkbox" name="qty" id="id_qty_1" value="1" checked> <label for="id_qty_1">1 KG</label>
-            <input type="checkbox" name="qty" id="id_qty_2" value="2"> <label for="id_qty_2">2 KG</label>
-            <input type="checkbox" name="qty" id="id_qty_5" value="5"> <label for="id_qty_5">5 KG</label>
-          </fieldset>
-          </p>
-          <p>
-          <fieldset>
-            <legend>Options</legend>
-            <label>Radio Buttons</label>
-            <input type="radio" name="radio" id="id_opt_1" value="1" checked> <label for="id_opt_1">opt 1</label>
-            <input type="radio" name="radio" id="id_opt_2" value="2"> <label for="id_opt_2">opt 2</label>
-            <input type="radio" name="radio" id="id_opt_all" value="all"> <label for="id_opt_all">opt ALL</label>
-          </fieldset>
-          </p>
-          <p>
-            <label for="id_cars_dl">datalist - Car:</label>
-            <input list="cars-suggestions" size="50px" placeholder="search..." name="cars-choice" id="id_cars_dl" />
+        <section class="border m-3 p-3 row">
+          <h4>Checkbox, Radio and Dropdown</h4>
+          <div class="col-md-6">
+            <fieldset>
+              <legend>Quantity (fieldset legend)</legend>
+              <label>Quantity</label>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="qty" id="id_qty_1" value="1" checked>
+                <label class="form-check-label" for="id_qty_1">1 KG</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="qty" id="id_qty_2" value="2">
+                <label class="form-check-label" for="id_qty_2">2 KG</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="qty" id="id_qty_5" value="5">
+                <label class="form-check-label" for="id_qty_5">5 KG</label>
+              </div>
+            </fieldset>
+            <p><mark>fieldset tag can be diabled to disable all options</mark></p>
+          </div>
+          <div class="col-md-6">
+            <fieldset>
+              <legend>Options (fieldset legend)</legend>
+              <label>Radio Buttons</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="radio" id="id_opt_1" value="1" checked>
+                <label class="form-check-label" for="id_opt_1">opt 1</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="radio" id="id_opt_2" value="2">
+                <label class="form-check-label" for="id_opt_2">opt 2</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="radio" id="id_opt_all" value="all">
+                <label class="form-check-label" for="id_opt_all">opt ALL</label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label" for="id_cars_dl">datalist - Car:</label>
+            <input class="form-control" list="cars-suggestions" size="50px" placeholder="search..." name="cars-choice"
+              id="id_cars_dl" />
             <datalist id="cars-suggestions">
               <option value="mercedes">describe my car - mercedes</option>
               <option>volkswagen</option>
@@ -235,10 +304,10 @@ This is a pre, here an-
               <option>Tesla</option>
               <option>Lamborghini</option>
             </datalist>
-          </p>
-          <p>
-            <label for="id_cars_opt_group">Select - Car:</label>
-            <select id="id_cars_opt_group" name="car">
+          </div>
+          <div class="col-md-6">
+            <label class="form-label" for="id_cars_opt_group">Select - Car:</label>
+            <select class="form-select" id="id_cars_opt_group" name="car">
               <optgroup label="Group 1">
                 <option value="mer">mercedes</option>
                 <option>volkswagen</option>
@@ -250,34 +319,58 @@ This is a pre, here an-
               </optgroup>
               <option>Others</option>
             </select>
-          </p>
+          </div>
         </section>
-        <section>
+        <section class="border m-3 p-3 row">
           <h2>others</h2>
-          <p><label for="id_color">Color</label> <input type="color" name="color" id="id_color"></p>
-          <p><label for="id_file">File</label> <input type="file" name="file" id="id_file"></p>
-          <p><label for="id_search">Search Text</label> <input type="search" name="search" id="id_search"></p>
-          <p><label for="id_hidden">Hidden input</label> <input type="hidden" name="hidden-value" id="id_hidden"
-              value="hidden-element-value"></p>
+          <div class="col-md-3">
+            <label class="form-label" for="id_color">Color</label>
+            <input class="form-control form-control-color" type="color" name="color" id="id_color">
+          </div>
+          <div class="col-md-3">
+            <label class="form-label" for="id_file">File</label>
+            <input class="form-control" type="file" name="file" id="id_file">
+          </div>
+          <div class="col-md-3">
+            <label class="form-label" for="id_search">Search Text</label>
+            <input class="form-control" type="search" name="search" id="id_search">
+          </div>
+          <div class="col-md-3">
+            <label class="form-label" for="id_hidden">Hidden input</label>
+            <input class="form-control" type="hidden" name="hidden-value" id="id_hidden" value="hidden-element-value">
+          </div>
         </section>
-        <section>
-          <h2>Tags for Display</h2>
-          <p>Meter : <meter min="0" max="100" value="50">Meter</meter></p>
-          <p>Progress : <progress max="100" , value="10">Progress</progress></p>
+        <section class="border m-3 p-3 row">
+          <h3>Tags for Display</h3>
+          <div class="col-md-6">
+            <p>Meter : <meter min="0" max="100" value="50">Meter</meter></p>
+          </div>
+          <div class="col-md-6">
+            <p>Progress : <progress max="100" , value="10">Progress</progress></p>
+          </div>
         </section>
-        <section>
-          <h2>Submit Section</h2>
-          <p><label for="id_submit">Submit Btn</label> <input type="submit" value="Submit Here" id="id_submit"></p>
-          <p><label for="id_reset">Reset</label> <input type="reset" value="Reset" id="id_reset"></p>
-          <p><label for="id_image">Image</label> <input type="image" src="image" alt="graphical submit buttons" id="id_image"></p>
+        <section class="border m-3 p-3 row">
+          <h3>Submit Section</h3>
+          <div class="col-md-4">
+            <label class="form-label" for="id_submit">Submit Btn</label>
+            <input type="submit" value="Submit Here" id="id_submit">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label" for="id_reset">Reset</label>
+            <input type="reset" value="Reset" id="id_reset">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label" for="id_image">Image</label>
+            <input type="image" src="image" alt="graphical submit buttons" id="id_image">
+          </div>
         </section>
       </form>
     </section>
-    <hr>
-    <section>
+    <br>
+    <section class="border p-3">
       <h1>IFrame</h1>
       <p>iframe embeds another website in your page</p>
-      <iframe src="http://www.arpit04tripathi.com" frameborder="0" width="75%" height="75%">Needs to support iframe to
+      <iframe src="http://www.arpit04tripathi.xyz" frameborder="0" width="75%" height="75%">Needs to support iframe to
         view this embedded site</iframe>
       <p>Embed Youtube Video</p>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/pQN-pnXPaVg" title="YouTube video player"
@@ -285,15 +378,15 @@ This is a pre, here an-
         allowfullscreen></iframe>
     </section>
   </main>
-  <hr />
-  <footer>
-    <h1>Footer</h1>
-    <p>This is <b>footer</b></p>
-    <p>Do follow semantics for html rather than using div everywhere</p>
-    <p>you should not allow others to put your site in iframe</p>
+  <br>
+  <footer class="bg-light py-3 mb-2">
+    <div class="container">
+      <h1>Footer</h1>
+      <p>This is <b>footer</b></p>
+      <p>Do follow semantics for html rather than using div everywhere</p>
+      <p>you should not allow others to put your site in iframe</p>
+    </div>
   </footer>
-    
-</div>
 </body>
 
 </html>
