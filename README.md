@@ -15,3 +15,7 @@ keep sass compile on to update the css files with live changes
 ```
 npm run compile
 ```
+
+- [Note](./docs/note.md)
+- [More info](./docs/more-info.md)
+

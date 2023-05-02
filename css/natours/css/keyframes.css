@@ -1,0 +1,47 @@
+
+
+/** ---------------------------------
+Keyframes for animation
+--------------------------------- */
+
+@keyframes movein_from_left {
+  0% {
+    opacity: 0;
+    transform: translate(-100px);
+  }
+  75% {
+    transform: translate(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes movein_from_right {
+  0% {
+    opacity: 0;
+    transform: translate(100px);
+  }
+  75% {
+    transform: translate(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes movein_from_bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  75% {
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
